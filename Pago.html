@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="estiloscss3.css">
+</head>
+<body>
+    
+    <header class="header2">
+        
+        <div class="centrado">
+          <p class="logo"> Easy Eats <br></p>
+          <p></p>
+          <p class="logoD"> -Comida sin TACC- <br></p> 
+           
+            <nav>
+                <a href="CalculoIMC.html">Calculo IMC</a>
+                <a href="Productos.html">Productos</a>
+                <a href="Pago.html">Pago</a>
+            </nav>
+        </div>
+            
+        </header>
+    
+<div class="contenedor">
+    
+    <!--Formato de la tarjeta-->
+    <section class="tarjeta">
+        <div class="adelante">
+            <div class="logo-marca" id="logo-marca">
+                
+            </div>
+            <img src="chip tarjeta.svg" alt="" class="chip">
+            <div class="datos">
+                <div class="grupo">
+                    <p class="label">Número Tarjeta</p>
+                    <p class="numero"> #### #### ####  ####</p>
+                </div>
+                <div class="flexbox">
+                    <div class="grupo">
+                        <p class="label">Nombre Tarjeta</p>
+                        <p class="nombre">Escriba su Nombre</p>
+                    </div>
+                </div>
+
+                <div class="grupo" id="expiracion">
+                    <p class="label">Expiración</p>
+                    <p class="expiracion"> <span class="mes">MM</span> /  <span class="anio">AA</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="atras">
+            <div class="barra-magnetica"></div>
+            
+            <div class="datos">
+                <div class="grupo" id="firma">
+                <p class="label">Firma</p>
+                <div class="firma"></div>
+            </div>
+
+                <div class="grupo" id="cvv">
+                    <p class="label">CVV</p>
+                    <p class="cvv"></p>
+                </div>
+            </div>
+
+            <p class="leyenda">
+                De hallarse esta tarjeta se agradecerá devolverla a 
+                Prisma Medios de Pago S.A.,Av.Corrientes 1437 Piso 10 (1042) Buenos Aires, Argentina., 
+                Tel (011)4379-3333 o a cualquier sucursal del Banco Emisor. Esta tarjeta es intransferible y para uso exclusivo del titular cuya firma consta arriba.
+                Válida entre las fechas indicadas. El titular usa esta tarjeta de acuerdo con los terminos y condiciones que rigen el uso de la misma.
+            </p>
+            <a href="#" class="link-banco">www.banco.com.ar</a>
+            
+
+        </div>
+    </section>
+
+ 
+
+    <!-- Formulario -->
+		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+			<div class="grupo">
+				<label for="inputNumero"> Número Tarjeta</label>
+				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+			</div>
+			<div class="grupo">
+				<label for="inputNombre">Nombre</label>
+				<input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="grupo expira">
+					<label for="selectMes">Expiracion</label>
+					<div class="flexbox">
+						
+                        <div class="grupo-select">
+							<select name="mes" id="seleccionMes">
+								<option disabled selected>Mes</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+
+
+						<div class="grupo-select">
+							<select name="anio" id="seleccionAnio">
+								<option disabled selected>Año</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+
+                        
+					</div>
+				</div>
+
+				<div class="grupo cvv">
+					<label for="inputCVV">CVV</label>
+					<input type="text" id="inputCVV" maxlength="3">
+				</div>
+			</div>
+			<button type="submit" class="boton-enviar">Enviar</button>
+		</form>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+            <div class="container-footer-all">
+                <div class="container-cuerpo">
+                
+                    <div class="columna1">
+                            <h1>Sobre Nosotros</h1>
+                            <p>Somos una familia dedicada a realizar productos caseros sin TACC. Nuestro fin 
+                            es que puedan realizar reuniones inclusivas para que nadie se quede sin comer algo rico.</p>
+                    </div>    
+        
+                    <div class="columna2">
+                        <h1>Redes Sociales</h1>
+    
+                        <div class="fila">
+                            
+                            <a target="blank" href="https://www.instagram.com/easyeats_glutenfree/"> <img src="instagram.svg" ></a>
+                            <a target="blank"  href="https://www.instagram.com/easyeats_glutenfree/">Seguinos en Instagram!</a>
+                        </div>
+    
+                        <div class="fila">
+                            <a target="blank" href="https://www.facebook.com/easyeatsglutenfree/"> <img src="facebook.svg"> </a>
+                            <a target="blank" href="https://www.facebook.com/easyeatsglutenfree/" >Seguinos en Facebook!</a>
+                        </div>
+                    </div>
+        
+                        <div class="columna3">
+                            <h1>Información de Contacto</h1>
+                            
+                            <div class="filacontacto">
+                                <img  src="casa.svg" >
+                                <label>San Isidro, Provincia de Buenos Aires. Cerca del Hipodromo.</label>
+                            </div>
+        
+                            <div class="filacontacto">
+                                <img  src="whatsapp.svg">
+                                <a target="blank" href="https://api.whatsapp.com/send?phone=XXXXXXXXXXX">Contactanos por Whatsapp!</a>
+                            </div>
+        
+                            <div class="filacontacto">
+                                <img  src="Mail.svg">
+                                <label>easyeats@gmail.com</label>
+                            </div>
+        
+                        </div>
+                </div>
+          </div>
+          </section>
+    </footer>
+    
+
+
+    <a class="Volver-arriba"> Subir </a>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="tarjeta.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+        <link rel="stylesheet" href="estiloscss2.css">
+</head>
+<body>
+  <header class="header2">
+        
+    <div class="centrado">
+      <p class="logo"> Easy Eats <br></p>
+      <p></p>
+      <p class="logoD"> -Comida sin TACC- <br></p> 
+       
+        <nav>
+            <a href="CalculoIMC.html">Calculo IMC</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Pago.html">Pago</a>
+        </nav>
+    </div>
+        
+    </header>
+  
+  
+  
+
+
+
+
+  <div class="contenedor">
+    
+    
+    <div class="CarritoCompras">
+      <h4> - Carrito de Compras - </h4>
+      <table class="table" >
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Acción</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="pieCompra">
+              <th class="ocultar" scope="row" colspan="5">Todavía no agrego ningún producto al carrito!</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+
+    <hr class="linea-separacion"  size=5 color="#bc5a45">
+
+
+
+
+    <div class="row" id="productos">     
+        
+    </div>
+    
+  </div>
+
+
+              <!--Template del pie de compra, donde dice el total-->
+        <template id="templatePieCompra">
+         
+          <th class= "mostrar" scope="row" colspan="2">Total productos:</th>
+          <td>10</td>
+          <td></td>
+          <td>$ <span>5000</span></td>
+      </template>
+
+      <template id="templateCompra">
+        <tr>
+          <th scope="row">id</th>
+          <td>Café</td>
+          <td>1</td>
+          <td>
+              <button id="botonAgregar">
+                  +
+              </button>
+              <button id="botonSacar" >
+                  -
+              </button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+      
+      </template>
+
+
+
+
+        <!--Creacion del Template para ahorrar codigo sin crear cada tarjeta en html-->
+      
+      <template id="templateProd" >
+        <div class="container">
+            <div class="card">                  
+              <!--Tarjeta -->
+              
+                
+                <img  src=""  >
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h3></h3>
+                  <p class="card-text"> $ <span></span></p>
+                  <button class="botonCompra">Comprar</button>
+                </div>
+
+              
+
+            </div>
+        </div>
+        
+      </template>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer>
+        <div class="container-footer-all">
+            <div class="container-cuerpo">
+            
+                <div class="columna1">
+                        <h1>Sobre Nosotros</h1>
+                        <p>Somos una familia dedicada a realizar productos caseros sin TACC. Nuestro fin 
+                        es que puedan realizar reuniones inclusivas para que nadie se quede sin comer algo rico.</p>
+                </div>    
+    
+                <div class="columna2">
+                        <h1>Redes Sociales</h1>
+    
+                        <div class="fila">
+                            
+                            <a target="blank" href="https://www.instagram.com/easyeats_glutenfree/"> <img src="instagram.svg" ></a>
+                            <a target="blank" href="https://www.instagram.com/easyeats_glutenfree/">Seguinos en Instagram!</a>
+                        </div>
+    
+                        <div class="fila">
+                            <a target="blank" href="https://www.facebook.com/easyeatsglutenfree/"> <img src="facebook.svg"> </a>
+                            <a target="blank" href="https://www.facebook.com/easyeatsglutenfree/" >Seguinos en Facebook!</a>
+                        </div>
+                    </div>
+    
+                    <div class="columna3">
+                        <h1>Información de Contacto</h1>
+                        
+                        <div class="filacontacto">
+                            <img  src="casa.svg" >
+                            <label>San Isidro, Provincia de Buenos Aires. Cerca del Hipodromo.</label>
+                        </div>
+    
+                        <div class="filacontacto">
+                          <img  src="whatsapp.svg">
+                          <a target="blank" href="https://api.whatsapp.com/send?phone=XXXXXXXXXXX">Contactanos por Whatsapp!</a>
+                        </div>
+    
+                        <div class="filacontacto">
+                            <img  src="Mail.svg">
+                            <label>easyeats@gmail.com</label>
+                        </div>
+    
+                    </div>
+            </div>
+      </div>
+      </section>
+    </footer>
+
+
+  <a class="Volver-arriba"> Subir </a>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="carrocompra.js"></script>
+</body>
+</html>

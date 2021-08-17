@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Final Gonda</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    
+
+</head>
+<body>
+    <header class="header2">
+        
+    <div class="centrado">
+        <p class="logo"> Easy Eats <br></p>
+        <p></p>
+        <p class="logoD"> -Comida sin TACC- <br></p> 
+         
+        <nav>
+            <a href="CalculoIMC.html">Calculo IMC</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Pago.html">Pago</a>
+        </nav>
+    </div>
+        
+    </header>
+
+    <a class="Volver-arriba"> Subir </a>
+
+    <section id="contenido">
+        <section id="superior">
+            
+
+        
+            <form id="formulario">
+                <legend>Datos Personales:</legend><br>
+                <p></p>
+                <input id="apellido" type="text" placeholder="Ingrese su Apellido" onkeyup= "capturarEnter(event,'nombre')"> <br><br>
+                <p></p>
+                <input id="nombre" type="text" placeholder="Ingrese su Nombre" onkeyup= "capturarEnter(event,'edad')"><br><br>
+                <p></p>
+                <input id="edad" type="number" placeholder="Ingrese su Edad" onkeyup= "capturarEnter(event,'altura')" ><br><br>
+                <p></p>
+                <input id="altura" type="number" placeholder="Ingrese su Altura en cm" onkeyup= "capturarEnter(event,'peso')"><br><br>
+                <p></p>
+                <input id="peso" type="number" placeholder="Ingrese su Peso en kg" onkeyup= "capturarEnter(event,'botonimc')"><br><br>
+                <br>
+            </form>
+
+            <button id="botonimc" onclick="comenzarCargaDatos()">Calcular IMC</button>
+
+            <div id="impresiones">
+            <br>
+            </div>
+        </section>
+        
+        
+        <br>
+
+    
+  
+   <footer>
+    <div class="container-footer-all">
+        <div class="container-cuerpo">
+        
+            <div class="columna1">
+                    <h1>Sobre Nosotros</h1>
+                    <p>Somos una familia dedicada a realizar productos caseros sin TACC. Nuestro fin 
+                    es que puedan realizar reuniones inclusivas para que nadie se quede sin comer algo rico.</p>
+            </div>    
+
+            <div class="columna2">
+                <h1>Redes Sociales</h1>
+
+                <div class="fila">
+                    
+                    <a target="blank" href="https://www.instagram.com/easyeats_glutenfree/"> <img src="instagram.svg" ></a>
+                    <a target="blank" href="https://www.instagram.com/easyeats_glutenfree/">Seguinos en Instagram!</a>
+                </div>
+
+                <div class="fila">
+                    <a target="blank" href="https://www.facebook.com/easyeatsglutenfree/"> <img src="facebook.svg"> </a>
+                    <a target="blank" href="https://www.facebook.com/easyeatsglutenfree/" >Seguinos en Facebook!</a>
+                </div>
+            </div>
+
+                <div class="columna3">
+                    <h1>Información de Contacto</h1>
+                    
+                    <div class="filacontacto">
+                        <img  src="casa.svg" >
+                        <label>San Isidro, Provincia de Buenos Aires. Cerca del Hipodromo.</label>
+                    </div>
+
+                    <div class="filacontacto">
+                        <img  src="whatsapp.svg">
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=XXXXXXXXXXX">Contactanos por Whatsapp!</a>
+                    </div>
+
+                    <div class="filacontacto">
+                        <img  src="Mail.svg">
+                        <label>easyeats@gmail.com</label>
+                        
+                    </div>
+
+                </div>
+        </div>
+  </div>
+  </section>
+</footer>
+  
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="Clase14Gonda.js"></script>
+    <script src="carritoclase14.js"></script>
+</body>
+</html>
